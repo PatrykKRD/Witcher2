@@ -1,0 +1,371 @@
+body
+{
+    background-image: url(../Image/dark-honeycomb.png);
+    margin: 0;
+    color: #fff;
+    margin: 0; 
+    font-family: 'Lato', sans-serif;
+}
+main
+{
+    margin-top: -20px;
+    background-image: url("../Image/tlo4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 1125px;
+}
+header
+{
+    text-align: center;
+}
+#header
+{
+    text-shadow: 0px 0px 30px #111;
+    letter-spacing: 5px;
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #eee;
+    width: 500px;
+    padding-top: 10px;
+}
+#slider
+{
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+.slider-body
+{
+    background-color: #333;
+    width: 400px;
+    height: 800px;
+    display: grid;
+    opacity: 0.7;
+    transform: scale(0.9);
+    transition: opacity 0.4s, transform 0.4s;
+    border: 3px solid #D4AF37;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #D4Af37;
+}
+.owl-item.active.center .slider-body
+{
+    opacity: 1;
+    transform: scale(1);
+}
+.book
+{
+    width: 400px;
+    height: 100%;
+}
+.book img
+{
+    border-radius: 20px 20px 0px 0px;
+}
+.text
+{
+    border-top: 1px solid #D4Af37;
+    text-align: center;
+    padding: 24px;
+    letter-spacing: 1px;
+}
+.text p
+{
+    font-size: 18px;
+}
+.text h1
+{
+    font-size: 34px;
+}
+.text h1
+{
+    margin-top: -10px;
+}
+#left-arrow
+{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 70px;
+    top: 520px;
+}
+#right-arrow
+{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 120px;
+    top: 520px;
+}
+#left-arrow:hover
+{
+    transform: translateX(-5px);  
+}
+#right-arrow:hover
+{
+    transform: translateX(5px);
+}
+
+button 
+{
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+}
+button 
+{
+    --primary-color: #999;
+    --hovered-color: #D4Af37;
+    position: relative;
+    font-weight: 900;
+    display: flex;
+    font-size: 20px;
+    gap: 0.5rem;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+button a 
+{
+    margin: 0;
+    position: relative;
+    font-size: 20px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+button::after 
+{
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.3s ease-out;
+}
+button a::before 
+{
+    position: absolute;
+    content: "Więcej";
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+}
+button:hover::after 
+{
+    width: 100%;
+}
+button:hover a::before 
+{
+    width: 100%;
+}
+button:hover svg 
+{
+    transform: translateX(4px);
+    color: var(--hovered-color)
+}
+button svg 
+{
+    color: var(--primary-color);
+    transition: 0.2s;
+    position: relative;
+    width: 15px;
+    transition-delay: 0.2s;
+}
+.gradient
+{
+    position: absolute;
+    top: 1067px;
+    opacity: 0.7;
+    width: 100%;
+    height: 38px;
+    background: linear-gradient(to top,#222,transparent);
+}
+    
+.wave1
+{
+    z-index: -2;
+    margin-top: -80px;
+}
+.info
+{
+    width: 100%;
+    text-align: center;
+    margin-top: -40px;
+}
+.info h1
+{
+    font-size: 42px;
+    margin-bottom: 50px;
+    padding: 45px;
+    
+}
+#ih1
+{
+    font-size: 58px;
+    background: linear-gradient(90deg,#309566 40%, #d76228 60%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.zalety
+{
+    color: #52b788;
+    width: 40%;
+    font-size: 20px;
+    margin-right: 60px;
+    background-color: #222;
+    border-radius: 25px;
+    padding: 25px;
+    opacity: 0.8;
+}
+.wady
+{
+    color: #f9844a;
+    margin-left: 60px;
+    width: 40%;
+    font-size: 20px; 
+    background-color: #222;
+    border-radius: 25px;
+    padding: 25px;
+    opacity: 0.8;
+}
+.zw
+{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    text-shadow: 4px 4px 5px #111;
+}
+.zw h1
+{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.wady h1
+{
+    border-bottom: 3px solid #d76228;
+}
+.zalety h1
+{
+    border-bottom: 3px solid #309566;
+}
+.main
+{
+    background-color: #222;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1500px;
+    display: flex;
+    margin-bottom: 200px;
+    box-shadow: 0px 0px 40px #111;
+}
+.main img
+{
+    width: 300px;
+    border-radius: 25px 0px 0px 25px;
+}
+.main div
+{
+    color: #ccc;
+    text-align: justify;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 40px;
+}
+.main li
+{
+    line-height: 35px;
+}
+span
+{
+    font-size: 23px;;
+    color: goldenrod;
+}
+.autor header
+{
+    color: #ccc;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    font-size: 48px;
+}
+.line
+{
+    width: 500px;
+    padding-top: 84px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.line hr
+{
+    height: 3px;
+    background-color: #ccc;
+}
+.tom header
+{
+    color: #ccc;
+    display: flex;
+    justify-content: center;
+    font-size: 29px;  
+    margin-bottom: 50px;
+}
+.tom .line
+{
+    padding-top: 62px;
+    width: 450px;
+}
+.tom-main
+{
+    display: flex;
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #222;
+    border-radius: 25px;
+    box-shadow: 0px 0px 40px #111;
+    margin-bottom: 150px;
+}
+.tom-img img
+{
+    border-radius: 25px 0px 0px 25px;
+    border-right: 6px dashed goldenrod; 
+}
+.tom-text
+{
+    color: #ccc;
+    text-align: justify;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 40px;
+}
+.demo-icon
+{
+    color: #ccc;
+    font-size: 48px;
+}
+.demo-icon:hover
+{
+    text-shadow: 0px 0px 30px gold;
+    color: darkgoldenrod;
+    transition: 0.4s;
+}
+.arrow:hover
+{
+    transition: 1s;
+    cursor: pointer;
+}
+#return
+{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    right: 70px;
+    bottom: 50px;
+}

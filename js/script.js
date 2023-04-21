@@ -1,0 +1,39 @@
+$(document).ready(function()
+{
+    $('#slider').owlCarousel(
+        {
+            loop:true,
+            dots:false,
+            center: true,
+        });
+    $('#left-arrow').click(function()
+        {
+            $('#slider').trigger('prev.owl.carousel');
+        });
+    $('#right-arrow').click(function()
+        {
+            $('#slider').trigger('next.owl.carousel');
+        });
+});
+jQuery(function($)
+{
+    $.scrollTo(0);
+    $("#link1").click(function()
+        {$.scrollTo($('#tom1'),1000);});
+    $("#link2").click(function()
+        {$.scrollTo($('#tom2'),1000);});
+    $("#link3").click(function()
+        {$.scrollTo($('#tom3'),1000);});
+    $("#link4").click(function()
+        {$.scrollTo($('#tom4'),1000);});
+    $("#link5").click(function()
+        {$.scrollTo($('#tom5'),1000);});
+    $("#link6").click(function()
+        {$.scrollTo($('#tom6'),1000);});
+    $("#link7").click(function()
+        {$.scrollTo($('#tom7'),1000);});
+    $("#link8").click(function()
+        {$.scrollTo($('#tom8'),1000);});
+    $("#link9").click(function()
+        {$.scrollTo($('#header'),1000);});
+});
